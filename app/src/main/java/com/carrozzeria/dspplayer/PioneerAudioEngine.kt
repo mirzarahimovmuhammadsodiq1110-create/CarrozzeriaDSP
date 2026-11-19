@@ -25,7 +25,7 @@ class PioneerAudioEngine(private val context: Context) {
     private var reverb: PresetReverb? = null
 
     val currentGains = FloatArray(13) { 0f }
-    var eqEnabled = true
+    private var eqEnabled = true
     var currentReverbMode = "OFF"
 
     val presets = mutableListOf(
